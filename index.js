@@ -1,5 +1,6 @@
 function check(){
    
+   
     var x=document.getElementById("form");
  var y=   x.getElementsByTagName("input");
 
@@ -21,8 +22,10 @@ if (y[i].value=="")
 var b=document.getElementById("p1");
 var c=document.getElementById("p2");
 var z=document.getElementById("confirmation");
-if (b.value!=c.value){
+if (b.value!= "" && b.value!=c.value){
 z.innerHTML="<p>Your Password Don't Match</p>";
+return false;
+
 }
 
 }

@@ -1,10 +1,14 @@
 
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 22%;
-  margin-top: 2%;
   justify-content: center;
   width: 55%;
   border: 1px solid rgb(158, 154, 154);
@@ -30,15 +34,13 @@
   margin-left: 1%;
 }
 .hundred{
-  width: 95%;
+  width: 97%;
   margin-left: 0.5%;
 }
 fieldset{
   border: none;
 }
-form fieldset{
-  border: 1px solid black;
-}
+
 
 input{
   margin-top: 5%;
@@ -92,4 +94,31 @@ margin-left: 1%;
   color: red;
   
 
+}
+
+@media screen and (max-width:600px){
+  #mainform{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+
+  }
+  #form{
+    width: 100%;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fifty, .hundred{
+    width: 96%;
+  }
+  #image{
+    display: none;
+  }
+  .container{
+    width: 90%;
+  }
 }
